@@ -1,0 +1,43 @@
+# CLI Commands:
+
+terraform init -> command to start working with TF. Downloads the providers plugins and all dependencies needed for TF create its services.
+
+terraform plan -> command to visualize what will be created, according to our main.tf file. It shows a detailed vision of the resources value, arguments, types and etc.
+
+terraform apply -> command to create our infrastructure. It also shows a detailed visualization of the resources being created, but in the end, it asks your permission to create the resources.
+
+terraform validate -> command to validate your TF files.
+
+terraform show -> command to show the current state (following the terraform.tfstate file) and saved plans.
+
+terraform providers -> list all the providers currently being used.
+
+terraform providers mirror -> sub-command from 'terraform providers' to copy all the plugins used by the providers to another directory.
+
+terraform fmt -> format your configuration files.
+
+terraform output -> show all the output values. You can also select a single output passing its name as argument.
+
+terraform destroy -> destroy all the resource (use --target flag for selection).
+
+# Terraform State Commands:
+
+terraform state list -> list all the resources in the current state.
+
+terraform state mv SOURCE DESTINATION-> used to move a resource into another block or to rename a resource.
+
+terraform state push -> show the current state, with detailed information.
+
+terraform state rm RESOURCE_NAME -> remove an item from the Terraform state.
+
+# Terraform Workspace Commands:
+
+terraform workspace new workspace_name -> create a new workspace.
+
+terraform workspace list -> list all workspaces.
+
+terraform workspace show -> show the name of the current workspace.
+
+terraform workspace select workspace_name -> select a workspace based on the name passed.
+
+terraform workspace delete workspace_name -> delete a workspace based on the name passed.
